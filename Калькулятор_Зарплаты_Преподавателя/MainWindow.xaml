@@ -1,0 +1,51 @@
+﻿<Window x:Class="Калькулятор_Зарплаты_Преподавателя.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Калькулятор_Зарплаты_Преподавателя"
+        mc:Ignorable="d"
+        Title="Расчет зарплаты преподавателя" Height="617" Width="600" Background="Yellow">
+    <Grid>
+        <Label Content="Введите, свои данные" Margin="5,10,98,529"/>
+
+        <GroupBox Margin="0,146,291,231" Header="Надбавки"/>
+
+        <CheckBox Content="Звание доцента" Margin="19,170,379,386" x:Name="doc1"/>
+        <CheckBox Content="Заведование кабинетом" Margin="19,197,379,359" x:Name="zaved11"/>
+        <CheckBox Content="Участие в проекте &quot;образование&quot;" Margin="19,221,258,335" x:Name="nats_proekt1"/>
+        <CheckBox Content="Куратор группы" Margin="19,254,379,302" x:Name="kyrat1"/>
+        <CheckBox Content="Звание &quot;Заслуженный учитель России&quot;" Margin="19,289,237,239" x:Name="ychit1"/>
+        <CheckBox Content="Учёная степень доктора наук" Margin="20,325,346,231" x:Name="kanddoc1"/>
+
+        <GroupBox Margin="5,357,323,10" Header="Оклад"/>
+
+        <RadioButton x:Name="Assistent" Content="Ассистент" Margin="19,378,357,178"/>
+        <RadioButton x:Name="Tich" Content="Преподаватель" Margin="19,406,357,150"/>
+        <RadioButton x:Name="Oldtich" Content="Старший преподаватель" Margin="19,434,357,122"/>
+        <RadioButton x:Name="Docent" Content="Доцент" Margin="19,462,357,94"/>
+        <RadioButton x:Name="Profi" Content="Профессор" Margin="19,490,357,66"/>
+        <RadioButton x:Name="Zaved" Content="Заведующий кафедрой" Margin="19,518,357,38"/>
+        <RadioButton x:Name="Dekan" Content="Декан факультета" Margin="19,546,357,10"/>
+
+        <GroupBox Margin="14,90,392,457" Header="Количество часов в неделю"/>
+        <TextBox Margin="24,106,414,455" x:Name="chasi_v_nedelu"/>
+
+        <GroupBox Margin="14,41,392,497" Header="Квалификационный уровень"/>
+        <TextBox Margin="24,61,414,500" x:Name="uroven"/>
+
+        <GroupBox Margin="369,47,58,477" Header="Начислено"/>
+        <TextBox Margin="384,72,85,484" x:Name="nach" RenderTransformOrigin="0.489,-0.138"/>
+
+        <GroupBox Margin="363,143,64,381" Header="Налог в пенсионный фонд"/>
+        <TextBox Margin="390,166,79,393" x:Name="koef"/>
+
+        <GroupBox Margin="363,246,64,280" Header="Подоходный налог"/>
+        <TextBox Margin="390,266,79,290" x:Name="nal"/>
+
+        <GroupBox Margin="369,343,58,178" Header="К выдаче"/>
+        <TextBox Margin="390,364,79,192" x:Name="vidach"/>
+
+        <Button Content="Ок" Click="vich" Margin="390,478,98,66"/>
+    </Grid>
+</Window>
